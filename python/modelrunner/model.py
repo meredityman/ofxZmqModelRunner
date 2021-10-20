@@ -65,6 +65,7 @@ class TextInput:
 
 class TextOutput:
 
-    def send(self, data, socket, flags=0, copy=False, track=False):
+    def send(self, socket, data, flags=0, copy=False, track=False):
+        print(data)
         socket.send_string(data, flags=flags)
 

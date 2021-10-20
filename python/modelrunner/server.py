@@ -30,5 +30,5 @@ class ModelServer:
             input = self.model.receive(self.socket)
 
             output = self.model._forward(input)
-            self.model.send(self.socket, output[0])
+            self.model.send(self.socket, output)
 
