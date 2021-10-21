@@ -18,7 +18,6 @@ Project{
         ]
 
         of.addons: [
-            'ofxModelRunner',
         ]
 
         // additional flags for the project. the of module sets some

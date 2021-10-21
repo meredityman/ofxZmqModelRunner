@@ -15,7 +15,7 @@ class DistilbertEmotion ( mr.Model, mr.TextInput, mr.TextOutput ):
 
 if __name__ == "__main__":
     args = mr.parse_args()
-
+    print("Making model")
     model = DistilbertEmotion()
 
     modelServer = mr.ModelServer(args.socket_addr, model)

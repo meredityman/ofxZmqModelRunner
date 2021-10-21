@@ -17,6 +17,7 @@ class ModelServer:
         self.context = zmq.Context()
         self.socket = self.context.socket(zmq.REP)
         self.socket.bind(self.socket_addr)
+        print(f"Bind at: {socket_addr}")
 
     def run(self):
         if self.running:
