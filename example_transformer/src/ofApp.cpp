@@ -4,15 +4,17 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
-    address  = "/tmp/ofxmodelrunner";
-    socketAddr = "ipc://" + address;
+    address  = "5732";
+    socketAddr = "tcp://meredityman.ddns.net:" + address;
+
+    // address  = "/tmp/ofxmodelrunner";
+    // socketAddr = "ipc://" + address;
     model.setup(socketAddr);
 
 
 }
 //--------------------------------------------------------------
 void ofApp::update(){
-
 
 }
 
@@ -29,7 +31,9 @@ void ofApp::keyPressed(int key){
         currentInput += key;
     } else if( key >= 'A' && key <= 'Z'){
         std::string c(1, key);
-        currentInput += ofToLower(c);        
+        currentInput += ofToLower(c);   
+    } else if( key == ' '){
+        currentInput += key;
     } else if (key == OF_KEY_RETURN){
         ofLogNotice() << currentInput;
 

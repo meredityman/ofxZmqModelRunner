@@ -18,8 +18,8 @@ class ofApp : public ofBaseApp{
 
 		TextModelRunner model;
 
-		std::string address  = "/tmp/ofxmodelrunner";
-		std::string socketAddr = "ipc://" + address;
+		std::string address;
+		std::string socketAddr;
 
 		std::string currentInput;
 		std::vector<std::string> inputs;
