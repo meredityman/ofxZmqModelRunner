@@ -29,7 +29,7 @@ parser.add_argument('--port',
 
 parser.add_argument('--ip',
                         help='Address to connect to',
-                        default="0.0.0.0")
+                        default="127.0.0.1")
 
 ipc_parser= subparsers.add_parser('ipc')
 

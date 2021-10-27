@@ -1,1 +1,1 @@
-ofxModelRunner
+ofxZmqModelRunner
